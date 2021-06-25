@@ -319,6 +319,7 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background: rgba(0, 0, 0, 0.4);
   }
   #navbar .hamburger {
     display: block;

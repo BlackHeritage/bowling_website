@@ -55,6 +55,7 @@
     .nav-ul.show {
       display: flex;
       flex-direction: column;
+      background: $bg-image-overlay;
     }
 
     .hamburger {
