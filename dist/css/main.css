@@ -1,41 +1,3 @@
-.hero {
-  background: url(../img/hero.jpg) no-repeat center center/cover;
-  background-attachment: fixed;
-  height: 60vh;
-  position: relative;
-}
-
-.hero:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-.hero .content {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
-  text-align: center;
-}
-
-.hero .content p {
-  margin-top: 1rem;
-  font-style: italic;
-}
-
-.hero .content a {
-  margin: 1rem;
-  color: #fff;
-}
-
 *,
 *:before,
 *:after {
@@ -79,6 +41,58 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.hero {
+  background: url(../img/hero.jpg) no-repeat center center/cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  height: 60vh;
+  position: relative;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.hero .content {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+.hero .content h1 {
+  color: #fff;
+}
+
+.hero .content p {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.hero .content a {
+  margin: 1rem;
+  color: #fff;
+}
+
+.hero .content a:hover > i {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
 }
 
 #reviews {
